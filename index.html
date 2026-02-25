@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A Valentine's Day surprise." />
+  <title>Will You Be My Valentine?</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E💌%3C/text%3E%3C/svg%3E">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- cursor -->
+  <div class="cursor cursor__dot"></div>
+  <div class="cursor cursor__ring"></div>
+
+  <!-- background glows -->
+  <div class="ambient">
+    <div class="ambient__glow ambient__glow--1"></div>
+    <div class="ambient__glow ambient__glow--2"></div>
+    <div class="ambient__glow ambient__glow--3"></div>
+  </div>
+
+  <!-- canvas layers for particles and effects -->
+  <canvas id="particles"></canvas>
+  <canvas id="fx-burst"></canvas>
+  <canvas id="fx-confetti"></canvas>
+
+  <!-- main screen -->
+  <section id="hero">
+    <div class="deco-line"></div>
+    <p class="hero__overline">a question for you</p>
+    <h1 class="hero__title">Will You Be<br />My <em>Valentine?</em></h1>
+    <p class="hero__sub">A small question. A lifetime memory.</p>
+
+    <div class="hero__actions">
+      <button id="btn-yes" class="btn-yes" aria-label="Yes">
+        <span>Yes, I will ❤️</span>
+      </button>
+      <button id="btn-no" class="btn-no" aria-label="No">
+        <span>No thanks 🤍</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- reveal screen (shown after yes is clicked) -->
+  <section id="reveal">
+    <div class="card">
+      <div class="card__icon">❤️</div>
+      <h2 class="card__heading">You Said Yes!</h2>
+      <p class="card__body">
+        You just made my world <strong>brighter</strong>.<br />
+        And I promise to make every single day special.
+      </p>
+      <span class="card__divider"></span>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
