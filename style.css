@@ -356,7 +356,7 @@ body:has(button:hover) .cursor__ring {
   font-weight: 300;
   letter-spacing: .03em;
   color: var(--text-muted);
-  border: 1px solid var(--surface-border);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 100px;
   position: relative;
   z-index: 10;
