@@ -310,7 +310,7 @@ body:has(button:hover) .cursor__ring {
   gap: var(--s2);
   padding: 1.15rem 3.2rem;
   font-family: var(--ff-serif);
-  font-size: 1.22rem;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: .04em;
   color: var(--bg);
@@ -355,9 +355,9 @@ body:has(button:hover) .cursor__ring {
   padding: 1.1rem 2.8rem;
   font-family: var(--ff-serif);
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .03em;
-  color: var(--text-muted);
+  color: var(--text);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 100px;
   position: relative;
